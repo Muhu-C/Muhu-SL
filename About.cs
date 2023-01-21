@@ -21,5 +21,10 @@ namespace MMSL
         {
             Close();
         }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://space.bilibili.com/1469137723");
+        }
     }
 }
