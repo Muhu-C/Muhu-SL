@@ -16,8 +16,6 @@ namespace MMSL
 {
     public partial class MainPage : UserControl
     {
-        public static Color CLR = Color.White;
-
         public static string Advanced = null;
         public static string MinRAM;
         public static string MaxRAM;
@@ -28,7 +26,6 @@ namespace MMSL
         
         public MainPage()
         {
-            MessageBox.Show("打开此程序时请关闭其他Java程序，以防数据丢失");
             InitializeComponent();
         }
 
@@ -67,7 +64,7 @@ namespace MMSL
             {
                 var ServerFileList = Directory.GetFiles(SERV_Pth, "*.jar");
                 int Files = ServerFileList.Count();
-                if (Files > 1)
+                if (Files > 1 | Files <= 0)
                 {
                     MessageBox.Show("请规范放置服务器API", "提示");
                 }
@@ -99,6 +96,16 @@ namespace MMSL
         private void AdvancedSettings_TextChanged(object sender, EventArgs e)
         {
             Advanced = AdvancedSettings.Text;
+        }
+
+        private void ServerInfoPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void H1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

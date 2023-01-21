@@ -44,13 +44,14 @@
             this.PageA = new MMSL.MainPage();
             this.PageB = new MMSL.ServerConsole();
             this.PageC = new MuhuSL.Plugins();
+            this.PageD = new MuhuSL.Download();
             this.MenuA.SuspendLayout();
             this.Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuA
             // 
-            this.MenuA.BackColor = System.Drawing.Color.Azure;
+            this.MenuA.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MenuA.Dock = System.Windows.Forms.DockStyle.Top;
             this.MenuA.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
             this.MenuA.ImageScalingSize = new System.Drawing.Size(32, 32);
@@ -150,6 +151,7 @@
             this.DownloadPage.TabIndex = 4;
             this.DownloadPage.Text = "下载";
             this.DownloadPage.UseVisualStyleBackColor = false;
+            this.DownloadPage.Click += new System.EventHandler(this.DownloadPage_Click);
             // 
             // PluginsPage
             // 
@@ -204,7 +206,8 @@
             // 
             // PageA
             // 
-            this.PageA.BackColor = System.Drawing.Color.Azure;
+            this.PageA.BackColor = System.Drawing.Color.White;
+            this.PageA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PageA.BackgroundImage")));
             this.PageA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PageA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PageA.Location = new System.Drawing.Point(0, 43);
@@ -231,6 +234,16 @@
             this.PageC.Size = new System.Drawing.Size(1150, 666);
             this.PageC.TabIndex = 6;
             // 
+            // PageD
+            // 
+            this.PageD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PageD.BackgroundImage")));
+            this.PageD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PageD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PageD.Location = new System.Drawing.Point(0, 43);
+            this.PageD.Name = "PageD";
+            this.PageD.Size = new System.Drawing.Size(1150, 666);
+            this.PageD.TabIndex = 7;
+            // 
             // Mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -240,6 +253,7 @@
             this.Controls.Add(this.PageA);
             this.Controls.Add(this.PageB);
             this.Controls.Add(this.PageC);
+            this.Controls.Add(this.PageD);
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.MenuA);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -270,6 +284,7 @@
         public System.Windows.Forms.StatusStrip MenuA;
         private System.Windows.Forms.Button DownloadPage;
         private MuhuSL.Plugins PageC;
+        private MuhuSL.Download PageD;
     }
 }
 
