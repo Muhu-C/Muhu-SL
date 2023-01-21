@@ -32,10 +32,10 @@
             this.AboutOK = new System.Windows.Forms.Button();
             this.Picture = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -70,25 +70,15 @@
             this.panel1.Size = new System.Drawing.Size(388, 273);
             this.panel1.TabIndex = 3;
             // 
-            // label1
+            // label4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(95, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Muhu SL v2.3.0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(18, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "制作者： Muhu_C";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(18, 175);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(251, 72);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "使用C# .NET\r\nWindows窗体应用制作\r\nbilibili:Muhu_C";
             // 
             // label3
             // 
@@ -100,15 +90,25 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "MCSLib制作者： Muhu_C";
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(18, 175);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(251, 72);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "使用C# .NET\r\nWindows窗体应用制作\r\nbilibili:Muhu_C";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(18, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(201, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "制作者： Muhu_C";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(95, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(192, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Muhu SL v2.3.0";
             // 
             // linkLabel1
             // 
@@ -119,6 +119,7 @@
             this.linkLabel1.TabIndex = 4;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "bilibili: https://space.bilibili.com/1469137723";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
             // label5
             // 
