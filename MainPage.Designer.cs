@@ -33,7 +33,7 @@ namespace MMSL
             this.H1 = new System.Windows.Forms.Label();
             this.H2 = new System.Windows.Forms.Label();
             this.TextforServerFolderAddress = new System.Windows.Forms.Label();
-            ServerInfoPanel = new System.Windows.Forms.Panel();
+            this.ServerInfoPanel = new System.Windows.Forms.Panel();
             this.ServerVersion = new System.Windows.Forms.Label();
             this.TextForServerVersion = new System.Windows.Forms.Label();
             this.LbServerAPI = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@ namespace MMSL
             this.AdvancedSettings = new System.Windows.Forms.TextBox();
             this.WtbMaxRAM = new MMSL.WaterTextbox();
             this.WtbMinRAM = new MMSL.WaterTextbox();
-            ServerInfoPanel.SuspendLayout();
+            this.ServerInfoPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // H1
@@ -64,6 +64,7 @@ namespace MMSL
             this.H1.TabIndex = 0;
             this.H1.Text = "Muhu SL 主页";
             this.H1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.H1.Click += new System.EventHandler(this.H1_Click);
             // 
             // H2
             // 
@@ -89,21 +90,22 @@ namespace MMSL
             // 
             // ServerInfoPanel
             // 
-            ServerInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            ServerInfoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            ServerInfoPanel.Controls.Add(this.ServerVersion);
-            ServerInfoPanel.Controls.Add(this.TextForServerVersion);
-            ServerInfoPanel.Controls.Add(this.LbServerAPI);
-            ServerInfoPanel.Controls.Add(this.TextForServerAPIAddress);
-            ServerInfoPanel.Controls.Add(this.JavaverText);
-            ServerInfoPanel.Controls.Add(this.TextForJavaVersion);
-            ServerInfoPanel.Controls.Add(this.FolderAddress);
-            ServerInfoPanel.Controls.Add(this.H2);
-            ServerInfoPanel.Controls.Add(this.TextforServerFolderAddress);
-            ServerInfoPanel.Location = new System.Drawing.Point(0, 130);
-            ServerInfoPanel.Name = "ServerInfoPanel";
-            ServerInfoPanel.Size = new System.Drawing.Size(1150, 220);
-            ServerInfoPanel.TabIndex = 3;
+            this.ServerInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ServerInfoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ServerInfoPanel.Controls.Add(this.ServerVersion);
+            this.ServerInfoPanel.Controls.Add(this.TextForServerVersion);
+            this.ServerInfoPanel.Controls.Add(this.LbServerAPI);
+            this.ServerInfoPanel.Controls.Add(this.TextForServerAPIAddress);
+            this.ServerInfoPanel.Controls.Add(this.JavaverText);
+            this.ServerInfoPanel.Controls.Add(this.TextForJavaVersion);
+            this.ServerInfoPanel.Controls.Add(this.FolderAddress);
+            this.ServerInfoPanel.Controls.Add(this.H2);
+            this.ServerInfoPanel.Controls.Add(this.TextforServerFolderAddress);
+            this.ServerInfoPanel.Location = new System.Drawing.Point(0, 130);
+            this.ServerInfoPanel.Name = "ServerInfoPanel";
+            this.ServerInfoPanel.Size = new System.Drawing.Size(1150, 220);
+            this.ServerInfoPanel.TabIndex = 3;
+            this.ServerInfoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ServerInfoPanel_Paint);
             // 
             // ServerVersion
             // 
@@ -178,16 +180,16 @@ namespace MMSL
             this.FolderAddress.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.FolderAddress.Location = new System.Drawing.Point(361, 57);
             this.FolderAddress.Name = "FolderAddress";
-            this.FolderAddress.Size = new System.Drawing.Size(179, 24);
+            this.FolderAddress.Size = new System.Drawing.Size(62, 24);
             this.FolderAddress.TabIndex = 3;
-            this.FolderAddress.Text = "ServerAddress";
+            this.FolderAddress.Text = "NONE";
             // 
             // FindServer
             // 
             this.FindServer.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.FindServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FindServer.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FindServer.Location = new System.Drawing.Point(862, 378);
+            this.FindServer.Location = new System.Drawing.Point(862, 369);
             this.FindServer.Name = "FindServer";
             this.FindServer.Size = new System.Drawing.Size(252, 129);
             this.FindServer.TabIndex = 4;
@@ -293,6 +295,7 @@ namespace MMSL
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImage = global::MuhuSL.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.AdvancedSettings);
             this.Controls.Add(this.label3);
@@ -303,13 +306,13 @@ namespace MMSL
             this.Controls.Add(this.TextForServerInfo);
             this.Controls.Add(this.SearchJava);
             this.Controls.Add(this.FindServer);
-            this.Controls.Add(ServerInfoPanel);
+            this.Controls.Add(this.ServerInfoPanel);
             this.Controls.Add(this.H1);
             this.Name = "MainPage";
             this.Size = new System.Drawing.Size(1150, 666);
             this.Load += new System.EventHandler(this.MainPage_Load);
-            ServerInfoPanel.ResumeLayout(false);
-            ServerInfoPanel.PerformLayout();
+            this.ServerInfoPanel.ResumeLayout(false);
+            this.ServerInfoPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,6 +339,6 @@ namespace MMSL
         private System.Windows.Forms.Label TextForServerAPIAddress;
         private System.Windows.Forms.Label ServerVersion;
         private System.Windows.Forms.Label TextForServerVersion;
-        public static System.Windows.Forms.Panel ServerInfoPanel;
+        public System.Windows.Forms.Panel ServerInfoPanel;
     }
 }
