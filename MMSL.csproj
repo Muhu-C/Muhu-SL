@@ -84,6 +84,12 @@
     <Compile Include="Plugins.Designer.cs">
       <DependentUpon>Plugins.cs</DependentUpon>
     </Compile>
+    <Compile Include="Download.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Download.Designer.cs">
+      <DependentUpon>Download.cs</DependentUpon>
+    </Compile>
     <Compile Include="WaterTextbox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plugins.resx">
       <DependentUpon>Plugins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Download.resx">
+      <DependentUpon>Download.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WaterTextbox.resx">
       <DependentUpon>WaterTextbox.cs</DependentUpon>
