@@ -59,8 +59,9 @@ namespace MMSL
             this.H1.Dock = System.Windows.Forms.DockStyle.Top;
             this.H1.Font = new System.Drawing.Font("微软雅黑", 20F, System.Drawing.FontStyle.Bold);
             this.H1.Location = new System.Drawing.Point(0, 0);
+            this.H1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.H1.Name = "H1";
-            this.H1.Size = new System.Drawing.Size(1150, 107);
+            this.H1.Size = new System.Drawing.Size(1150, 108);
             this.H1.TabIndex = 0;
             this.H1.Text = "Muhu SL 主页";
             this.H1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -72,6 +73,7 @@ namespace MMSL
             this.H2.BackColor = System.Drawing.Color.Transparent;
             this.H2.Font = new System.Drawing.Font("微软雅黑", 10F);
             this.H2.Location = new System.Drawing.Point(24, 12);
+            this.H2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.H2.Name = "H2";
             this.H2.Size = new System.Drawing.Size(150, 35);
             this.H2.TabIndex = 1;
@@ -82,7 +84,8 @@ namespace MMSL
             this.TextforServerFolderAddress.AutoSize = true;
             this.TextforServerFolderAddress.BackColor = System.Drawing.Color.Transparent;
             this.TextforServerFolderAddress.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TextforServerFolderAddress.Location = new System.Drawing.Point(65, 57);
+            this.TextforServerFolderAddress.Location = new System.Drawing.Point(64, 61);
+            this.TextforServerFolderAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextforServerFolderAddress.Name = "TextforServerFolderAddress";
             this.TextforServerFolderAddress.Size = new System.Drawing.Size(135, 24);
             this.TextforServerFolderAddress.TabIndex = 2;
@@ -102,8 +105,9 @@ namespace MMSL
             this.ServerInfoPanel.Controls.Add(this.H2);
             this.ServerInfoPanel.Controls.Add(this.TextforServerFolderAddress);
             this.ServerInfoPanel.Location = new System.Drawing.Point(0, 130);
+            this.ServerInfoPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ServerInfoPanel.Name = "ServerInfoPanel";
-            this.ServerInfoPanel.Size = new System.Drawing.Size(1150, 220);
+            this.ServerInfoPanel.Size = new System.Drawing.Size(1150, 222);
             this.ServerInfoPanel.TabIndex = 3;
             this.ServerInfoPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ServerInfoPanel_Paint);
             // 
@@ -112,7 +116,8 @@ namespace MMSL
             this.ServerVersion.AutoSize = true;
             this.ServerVersion.BackColor = System.Drawing.Color.Transparent;
             this.ServerVersion.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ServerVersion.Location = new System.Drawing.Point(361, 173);
+            this.ServerVersion.Location = new System.Drawing.Point(360, 172);
+            this.ServerVersion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ServerVersion.Name = "ServerVersion";
             this.ServerVersion.Size = new System.Drawing.Size(62, 24);
             this.ServerVersion.TabIndex = 9;
@@ -123,7 +128,8 @@ namespace MMSL
             this.TextForServerVersion.AutoSize = true;
             this.TextForServerVersion.BackColor = System.Drawing.Color.Transparent;
             this.TextForServerVersion.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TextForServerVersion.Location = new System.Drawing.Point(65, 173);
+            this.TextForServerVersion.Location = new System.Drawing.Point(64, 172);
+            this.TextForServerVersion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextForServerVersion.Name = "TextForServerVersion";
             this.TextForServerVersion.Size = new System.Drawing.Size(135, 24);
             this.TextForServerVersion.TabIndex = 8;
@@ -134,7 +140,8 @@ namespace MMSL
             this.LbServerAPI.AutoSize = true;
             this.LbServerAPI.BackColor = System.Drawing.Color.Transparent;
             this.LbServerAPI.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.LbServerAPI.Location = new System.Drawing.Point(361, 134);
+            this.LbServerAPI.Location = new System.Drawing.Point(360, 134);
+            this.LbServerAPI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LbServerAPI.Name = "LbServerAPI";
             this.LbServerAPI.Size = new System.Drawing.Size(62, 24);
             this.LbServerAPI.TabIndex = 7;
@@ -145,7 +152,8 @@ namespace MMSL
             this.TextForServerAPIAddress.AutoSize = true;
             this.TextForServerAPIAddress.BackColor = System.Drawing.Color.Transparent;
             this.TextForServerAPIAddress.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TextForServerAPIAddress.Location = new System.Drawing.Point(65, 134);
+            this.TextForServerAPIAddress.Location = new System.Drawing.Point(64, 134);
+            this.TextForServerAPIAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextForServerAPIAddress.Name = "TextForServerAPIAddress";
             this.TextForServerAPIAddress.Size = new System.Drawing.Size(174, 24);
             this.TextForServerAPIAddress.TabIndex = 6;
@@ -156,7 +164,8 @@ namespace MMSL
             this.JavaverText.AutoSize = true;
             this.JavaverText.BackColor = System.Drawing.Color.Transparent;
             this.JavaverText.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.JavaverText.Location = new System.Drawing.Point(361, 96);
+            this.JavaverText.Location = new System.Drawing.Point(360, 96);
+            this.JavaverText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.JavaverText.Name = "JavaverText";
             this.JavaverText.Size = new System.Drawing.Size(153, 24);
             this.JavaverText.TabIndex = 5;
@@ -167,7 +176,8 @@ namespace MMSL
             this.TextForJavaVersion.AutoSize = true;
             this.TextForJavaVersion.BackColor = System.Drawing.Color.Transparent;
             this.TextForJavaVersion.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TextForJavaVersion.Location = new System.Drawing.Point(65, 96);
+            this.TextForJavaVersion.Location = new System.Drawing.Point(64, 96);
+            this.TextForJavaVersion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextForJavaVersion.Name = "TextForJavaVersion";
             this.TextForJavaVersion.Size = new System.Drawing.Size(112, 24);
             this.TextForJavaVersion.TabIndex = 4;
@@ -178,7 +188,8 @@ namespace MMSL
             this.FolderAddress.AutoSize = true;
             this.FolderAddress.BackColor = System.Drawing.Color.Transparent;
             this.FolderAddress.Font = new System.Drawing.Font("幼圆", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FolderAddress.Location = new System.Drawing.Point(361, 57);
+            this.FolderAddress.Location = new System.Drawing.Point(360, 61);
+            this.FolderAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FolderAddress.Name = "FolderAddress";
             this.FolderAddress.Size = new System.Drawing.Size(62, 24);
             this.FolderAddress.TabIndex = 3;
@@ -189,9 +200,10 @@ namespace MMSL
             this.FindServer.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.FindServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FindServer.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FindServer.Location = new System.Drawing.Point(862, 369);
+            this.FindServer.Location = new System.Drawing.Point(862, 370);
+            this.FindServer.Margin = new System.Windows.Forms.Padding(2);
             this.FindServer.Name = "FindServer";
-            this.FindServer.Size = new System.Drawing.Size(252, 129);
+            this.FindServer.Size = new System.Drawing.Size(252, 128);
             this.FindServer.TabIndex = 4;
             this.FindServer.Text = "查找服务器";
             this.FindServer.UseVisualStyleBackColor = false;
@@ -202,9 +214,10 @@ namespace MMSL
             this.SearchJava.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.SearchJava.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SearchJava.Font = new System.Drawing.Font("幼圆", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.SearchJava.Location = new System.Drawing.Point(862, 517);
+            this.SearchJava.Location = new System.Drawing.Point(862, 516);
+            this.SearchJava.Margin = new System.Windows.Forms.Padding(2);
             this.SearchJava.Name = "SearchJava";
-            this.SearchJava.Size = new System.Drawing.Size(252, 129);
+            this.SearchJava.Size = new System.Drawing.Size(252, 128);
             this.SearchJava.TabIndex = 5;
             this.SearchJava.Text = "更换Java";
             this.SearchJava.UseVisualStyleBackColor = false;
@@ -215,7 +228,8 @@ namespace MMSL
             this.TextForServerInfo.AutoSize = true;
             this.TextForServerInfo.BackColor = System.Drawing.Color.Transparent;
             this.TextForServerInfo.Font = new System.Drawing.Font("幼圆", 12F, System.Drawing.FontStyle.Bold);
-            this.TextForServerInfo.Location = new System.Drawing.Point(25, 385);
+            this.TextForServerInfo.Location = new System.Drawing.Point(24, 384);
+            this.TextForServerInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TextForServerInfo.Name = "TextForServerInfo";
             this.TextForServerInfo.Size = new System.Drawing.Size(180, 33);
             this.TextForServerInfo.TabIndex = 6;
@@ -226,7 +240,8 @@ namespace MMSL
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("幼圆", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(65, 440);
+            this.label1.Location = new System.Drawing.Point(64, 440);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(215, 27);
             this.label1.TabIndex = 7;
@@ -237,7 +252,8 @@ namespace MMSL
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("幼圆", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(65, 487);
+            this.label2.Location = new System.Drawing.Point(64, 488);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 27);
             this.label2.TabIndex = 8;
@@ -248,7 +264,8 @@ namespace MMSL
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("幼圆", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(71, 549);
+            this.label3.Location = new System.Drawing.Point(72, 548);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 27);
             this.label3.TabIndex = 11;
@@ -258,9 +275,10 @@ namespace MMSL
             // 
             this.AdvancedSettings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AdvancedSettings.Font = new System.Drawing.Font("宋体", 11F);
-            this.AdvancedSettings.Location = new System.Drawing.Point(76, 596);
+            this.AdvancedSettings.Location = new System.Drawing.Point(72, 596);
+            this.AdvancedSettings.Margin = new System.Windows.Forms.Padding(2);
             this.AdvancedSettings.Name = "AdvancedSettings";
-            this.AdvancedSettings.Size = new System.Drawing.Size(665, 41);
+            this.AdvancedSettings.Size = new System.Drawing.Size(668, 41);
             this.AdvancedSettings.TabIndex = 12;
             this.AdvancedSettings.TextChanged += new System.EventHandler(this.AdvancedSettings_TextChanged);
             // 
@@ -269,9 +287,10 @@ namespace MMSL
             this.WtbMaxRAM.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.WtbMaxRAM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.WtbMaxRAM.Font = new System.Drawing.Font("宋体", 10F);
-            this.WtbMaxRAM.Location = new System.Drawing.Point(290, 485);
+            this.WtbMaxRAM.Location = new System.Drawing.Point(290, 484);
+            this.WtbMaxRAM.Margin = new System.Windows.Forms.Padding(2);
             this.WtbMaxRAM.Name = "WtbMaxRAM";
-            this.WtbMaxRAM.Size = new System.Drawing.Size(109, 38);
+            this.WtbMaxRAM.Size = new System.Drawing.Size(112, 38);
             this.WtbMaxRAM.TabIndex = 10;
             this.WtbMaxRAM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.WtbMaxRAM.WatermarkText = "MB";
@@ -283,8 +302,9 @@ namespace MMSL
             this.WtbMinRAM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.WtbMinRAM.Font = new System.Drawing.Font("宋体", 10F);
             this.WtbMinRAM.Location = new System.Drawing.Point(290, 438);
+            this.WtbMinRAM.Margin = new System.Windows.Forms.Padding(2);
             this.WtbMinRAM.Name = "WtbMinRAM";
-            this.WtbMinRAM.Size = new System.Drawing.Size(109, 38);
+            this.WtbMinRAM.Size = new System.Drawing.Size(112, 38);
             this.WtbMinRAM.TabIndex = 9;
             this.WtbMinRAM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.WtbMinRAM.WatermarkText = "MB";
@@ -292,8 +312,8 @@ namespace MMSL
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::MuhuSL.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -308,6 +328,7 @@ namespace MMSL
             this.Controls.Add(this.FindServer);
             this.Controls.Add(this.ServerInfoPanel);
             this.Controls.Add(this.H1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainPage";
             this.Size = new System.Drawing.Size(1150, 666);
             this.Load += new System.EventHandler(this.MainPage_Load);
