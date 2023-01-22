@@ -1,6 +1,6 @@
 上方文件请直接使用Visual Studio打开sln！
 
-<img src="https://raw.githubusercontent.com/Muhu-C/MMSL/master/Resources/Icon.png"></img>
+<img src="https://raw.githubusercontent.com/Muhu-C/Muhu-SL/master/Resources/Icon.png"></img>
 # Muhu Minecraft Server Launcher
 一个MC服务器启动器
 特点：
