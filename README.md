@@ -1,3 +1,4 @@
+开学期间停止更新！
 上方文件请直接使用Visual Studio打开sln！
 
 <img src="https://raw.githubusercontent.com/Muhu-C/Muhu-SL/master/Resources/Icon.png"></img>
